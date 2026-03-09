@@ -2,136 +2,239 @@
 <html>
 
 <head>
+    <title>Ramkrishna Parmar Portfolio</title>
 
-<title>Ramkrishna Parmar Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #1f4037, #99f2c8);
+            margin: 0;
+            padding: 0;
+        }
 
-<style>
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            margin-top: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
 
-body{
-font-family: Arial;
-background: linear-gradient(120deg,#1f4037,#99f2c8);
-margin:0;
-padding:0;
-}
+        h1 {
+            color: #1f4037;
+        }
 
-.container{
-width:90%;
-max-width:1000px;
-margin:auto;
-margin-top:40px;
-background:white;
-padding:30px;
-border-radius:10px;
-}
+        .about {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+        }
 
-.about{
-display:flex;
-justify-content:space-between;
-gap:30px;
-}
+        .about img {
+            width: 160px;
+            border-radius: 50%;
+            border: 4px solid #1f4037;
+        }
 
-.about img{
-width:160px;
-border-radius:50%;
-}
+        section p {
+            line-height: 1.6;
+        }
 
-.certificates{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-margin-top:20px;
-}
+        h2,
+        h3 {
+            color: #1f4037;
+        }
 
-.certificates img{
-width:100%;
-border-radius:10px;
-}
+        ul {
+            padding-left: 20px;
+        }
 
-</style>
+        .certificates {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .certificates img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #games div {
+            background: #f3f3f3;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        #games button {
+            padding: 5px 10px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+    </style>
 
 </head>
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-<h1>Ramkrishna Parmar</h1>
+        <h1>Ramkrishna Parmar</h1>
 
-<section class="about">
+        <!-- About Me Section -->
+        <section class="about">
 
-<div>
+            <!-- Left Text -->
+            <div>
+                <p><b>Hey,</b></p>
 
-<h2>About Me</h2>
+                <p><b>Name:</b> Ramkrishna Parmar</p>
+                <p><b>Class:</b> 12 PCM</p>
+                <p><b>School:</b> Sahara Public H.S., Kalapipal, Madhya Pradesh</p>
+                <p><b>Email:</b> ramkrishnaparmar81@gmail.com</p>
 
-<p>
-Class 12 PCM student interested in programming, data science,
-and digital technology. I work with Python, GitHub repositories
-and basic web development.
-</p>
+                <br>
 
-<p>Email: ramkrishnaparmar81@gmail.com</p>
+                <p>
+                    I am passionate about programming, data science, and digital technologies.
+                    I have hands-on experience with Python, managing projects on GitHub, and
+                    building small web projects. I enjoy exploring new technologies, solving
+                    problems through code, and creating practical applications to strengthen
+                    my technical skills.
+                </p>
 
-</div>
+                <br>
 
-<!-- PROFILE PHOTO -->
+                <h3>Skills</h3>
+                <ul>
+                    <li>Python Programming</li>
+                    <li>Git & GitHub</li>
+                    <li>HTML & CSS Basics</li>
+                    <li>Basic JavaScript</li>
+                    <li>Data Science Fundamentals</li>
+                    <li>Power BI – Interactive Dashboards</li>
+                    <li>Prompt Engineering / AI Tools</li>
+                </ul>
 
-<div>
+                <br>
 
-<img src="IMG_20240727_220305_720.jpg">
+                <h3>Certificates</h3>
+                <ul>
+                    <li>IIT Madras – Introduction to Data Science and AI (Aug 2025)</li>
+                    <li>SIIT – Diploma in Office Automation, A+ Grade (May 2024)</li>
+                    <li>OfficeMaster – Power BI Workshop (Mar 2026)</li>
+                </ul>
+            </div>
 
-</div>
+            <!-- Right Profile Photo -->
+            <div>
+                <img src="IMG_20240727_220305_720.jpg" alt="Ramkrishna Parmar">
+            </div>
 
-</section>
+        </section>
 
-<h2>Certificates</h2>
+        <!-- Certificates Gallery -->
+        <h2>Certificates</h2>
 
-<div class="certificates">
+        <div class="certificates">
 
-<!-- IIT MADRAS -->
+            <!-- IIT Madras -->
+            <div>
+                <h3>IIT Madras</h3>
+                <a href="ramkrishnaparmar81@gmail.com.jpg" target="_blank">
+                    <img src="ramkrishnaparmar81@gmail.com.jpg" alt="IIT Madras Certificate">
+                </a>
+            </div>
 
-<div>
+            <!-- SIIT Diploma -->
+            <div>
+                <h3>SIIT Diploma</h3>
+                <a href="IMG_20240619_121121.jpg" target="_blank">
+                    <img src="IMG_20240619_121121.jpg" alt="SIIT Diploma Certificate">
+                </a>
+            </div>
 
-<h3>IIT Madras</h3>
+            <!-- Power BI -->
+            <div>
+                <h3>Power BI Workshop</h3>
+                <a href="Certificate_page-0001.jpg" target="_blank">
+                    <img src="Certificate_page-0001.jpg" alt="Power BI Certificate">
+                </a>
+            </div>
 
-<a href="certificate IIT MADRAS" target="_blank">
+        </div>
 
-<img src="ramkrishnaparmar81@gmail.com.jpg">
+        <!-- Mini Projects / Games -->
+        <h2>Mini Projects / Games</h2>
 
-</a>
+        <div id="games">
 
-</div>
+            <!-- Calculator -->
+            <div>
+                <h3>Calculator</h3>
+                <input type="number" id="num1" placeholder="Number 1">
+                <input type="number" id="num2" placeholder="Number 2">
+                <select id="operation">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="**">^</option>
+                </select>
+                <button onclick="calculate()">Calculate</button>
+                <p>Result: <span id="calcResult"></span></p>
+            </div>
 
-<!-- SIIT DIPLOMA -->
+            <!-- Coin Toss -->
+            <div>
+                <h3>Coin Toss</h3>
+                <button onclick="tossCoin()">Toss</button>
+                <p>Result: <span id="coinResult"></span></p>
+            </div>
 
-<div>
+            <!-- Dice Roll -->
+            <div>
+                <h3>Dice Roll</h3>
+                <button onclick="rollDice()">Roll</button>
+                <p>Result: <span id="diceResult"></span></p>
+            </div>
 
-<h3>Office Automation Diploma</h3>
+        </div>
 
-<a href="certificates diploma" target="_blank">
+    </div>
 
-<img src="IMG_20240619_121121.jpg">
+    <!-- JavaScript for Games -->
+    <script>
+        function calculate() {
+            let a = parseFloat(document.getElementById('num1').value);
+            let b = parseFloat(document.getElementById('num2').value);
+            let op = document.getElementById('operation').value;
+            let res;
+            if (op === '+') res = a + b;
+            else if (op === '-') res = a - b;
+            else if (op === '*') res = a * b;
+            else if (op === '/') res = b !== 0 ? a / b : 'Error';
+            else if (op === '**') res = a ** b;
+            document.getElementById('calcResult').innerText = res;
+        }
 
-</a>
+        function tossCoin() {
+            let r = Math.random() < 0.5 ? 'Heads' : 'Tails';
+            document.getElementById('coinResult').innerText = r;
+        }
 
-</div>
-
-<!-- POWER BI -->
-
-<div>
-
-<h3>Power BI Workshop</h3>
-
-<a href="certificates/powerbi.jpg" target="_blank">
-
-<img src="Certificate (1).pdf">
-
-</a>
-
-</div>
-
-</div>
-
-</div>
+        function rollDice() {
+            let r = Math.floor(Math.random() * 6) + 1;
+            document.getElementById('diceResult').innerText = r;
+        }
+    </script>
 
 </body>
+
 </html>
