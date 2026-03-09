@@ -1,57 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramkrishna Parmar Portfolio</title>
-
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(120deg, #1f4037, #99f2c8);
             margin: 0;
             padding: 0;
+            background: linear-gradient(135deg, #1f4037, #1e90ff, #99f2c8);
         }
 
         .container {
             width: 90%;
             max-width: 1000px;
-            margin: auto;
-            margin-top: 40px;
-            background: white;
+            margin: 40px auto;
+            background: #fff;
             padding: 30px;
-            border-radius: 10px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
 
-        h1 {
-            color: #1f4037;
+        h1, h2, h3 {
+            color: #ff6b6b;
+            margin-top: 20px;
         }
 
+        /* About Section */
         .about {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            flex-wrap: wrap;
             gap: 30px;
+            align-items: flex-start;
         }
 
-        .about img {
-            width: 160px;
-            border-radius: 50%;
-            border: 4px solid #1f4037;
+        .about-text {
+            flex: 1 1 300px;
         }
 
-        section p {
+        .about-text p {
             line-height: 1.6;
         }
 
-        h2,
-        h3 {
-            color: #1f4037;
+        .profile-img {
+            flex: 0 0 160px;
         }
 
+        .profile-img img {
+            width: 160px;
+            border-radius: 50%;
+            border: 4px solid #1e90ff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Skills */
         ul {
             padding-left: 20px;
         }
 
+        /* Certificates */
         .certificates {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -62,51 +72,89 @@
         .certificates img {
             width: 100%;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
         }
 
+        .certificates img:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Games / Mini Projects */
         #games div {
             background: #f3f3f3;
             padding: 15px;
             margin-top: 15px;
             border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+        }
+
+        #games div:hover {
+            transform: translateY(-5px);
         }
 
         #games button {
-            padding: 5px 10px;
+            padding: 5px 12px;
             margin-top: 5px;
             cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #1e90ff;
+            color: white;
+            transition: background 0.3s;
         }
-    </style>
 
+        #games button:hover {
+            background: #0d6efd;
+        }
+
+        /* Links */
+        a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .about {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-img {
+                margin-bottom: 20px;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
-
     <div class="container">
-
         <h1>Ramkrishna Parmar</h1>
 
-        <!-- About Me Section -->
+        <!-- About Section -->
         <section class="about">
-
-            <!-- Left Text -->
-            <div>
-                <p><b>Hey,</b></p>
-
+            <div class="about-text">
+                <p><b>Hey!</b></p>
                 <p><b>Name:</b> Ramkrishna Parmar</p>
                 <p><b>Class:</b> 12 PCM</p>
                 <p><b>School:</b> Sahara Public H.S., Kalapipal, Madhya Pradesh</p>
                 <p><b>Email:</b> ramkrishnaparmar81@gmail.com</p>
+                <p><b>GitHub:</b> <a href="https://github.com/YourGitHubUsername" target="_blank">github.com/YourGitHubUsername</a></p>
+                <p><b>LinkedIn:</b> <a href="https://linkedin.com/in/YourLinkedInUsername" target="_blank">linkedin.com/in/YourLinkedInUsername</a></p>
 
                 <br>
 
                 <p>
-                    I am passionate about programming, data science, and digital technologies.
-                    I have hands-on experience with Python, managing projects on GitHub, and
-                    building small web projects. I enjoy exploring new technologies, solving
-                    problems through code, and creating practical applications to strengthen
-                    my technical skills.
+                    I am an <span style="color:#ff6b6b;">Aspiring Data Analyst & Python Developer</span> with a passion for
+                    <span style="color:#1e90ff;">Data Science</span>, <span style="color:#f39c12;">AI Tools</span>, and
+                    programming. I enjoy building practical projects, exploring new technologies, and applying my skills to solve real-world problems.
                 </p>
 
                 <br>
@@ -114,9 +162,8 @@
                 <h3>Skills</h3>
                 <ul>
                     <li>Python Programming</li>
-                    <li>Git & GitHub</li>
-                    <li>HTML & CSS Basics</li>
-                    <li>Basic JavaScript</li>
+                    <li>Git & GitHub (Projects & Repositories)</li>
+                    <li>HTML, CSS & Basic JavaScript</li>
                     <li>Data Science Fundamentals</li>
                     <li>Power BI – Interactive Dashboards</li>
                     <li>Prompt Engineering / AI Tools</li>
@@ -132,18 +179,15 @@
                 </ul>
             </div>
 
-            <!-- Right Profile Photo -->
-            <div>
+            <!-- Profile Image -->
+            <div class="profile-img">
                 <img src="IMG_20240727_220305_720.jpg" alt="Ramkrishna Parmar">
             </div>
-
         </section>
 
         <!-- Certificates Gallery -->
         <h2>Certificates</h2>
-
         <div class="certificates">
-
             <!-- IIT Madras -->
             <div>
                 <h3>IIT Madras</h3>
@@ -160,21 +204,18 @@
                 </a>
             </div>
 
-            <!-- Power BI -->
+            <!-- Power BI Workshop -->
             <div>
                 <h3>Power BI Workshop</h3>
                 <a href="Certificate_page-0001.jpg" target="_blank">
                     <img src="Certificate_page-0001.jpg" alt="Power BI Certificate">
                 </a>
             </div>
-
         </div>
 
         <!-- Mini Projects / Games -->
         <h2>Mini Projects / Games</h2>
-
         <div id="games">
-
             <!-- Calculator -->
             <div>
                 <h3>Calculator</h3>
@@ -204,12 +245,11 @@
                 <button onclick="rollDice()">Roll</button>
                 <p>Result: <span id="diceResult"></span></p>
             </div>
-
         </div>
 
     </div>
 
-    <!-- JavaScript for Games -->
+    <!-- JS for Mini Projects -->
     <script>
         function calculate() {
             let a = parseFloat(document.getElementById('num1').value);
